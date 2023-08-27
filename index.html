@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>memes-app</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="flex__container">
+        <div class="settings___wrapper">
+          <h2 class="settings__title">Настройки</h2>
+          <p class="settings__subtitle">Мем</p>
+          <select class="select__box settings__input" name="" id="select__box">
+            <option value="Выберите изображение">Выберите изображение</option>
+          </select>
+          <p class="settings__subtitle">Текст вверху</p>
+          <input id="top__input" class="settings__input" type="text" />
+          <p class="settings__subtitle">Текст снизу</p>
+          <input id="below__input" class="settings__input" type="text" />
+        </div>
+        <!-- <h2 class="preview__title">Превью</h2> -->
+        <!-- <div id="preview__wrapper" class="preview__wrapper"> -->
+          
+          <div class="div">
+           <img id="mem__img" class="mem__img" alt="Картинка мема" />
+            <p id="text__top" class="text__top"></p>
+            <p id="text__below" class="text__below"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="javascript/model.js"></script>
+    <script src="javascript/view.js"></script>
+    <script src="javascript/api.js"></script>
+    <script src="javascript/controller.js"></script>
+    <script src="javascript/index.js"></script>
+  </body>
+</html>
